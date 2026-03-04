@@ -20,8 +20,8 @@
  * sistemas antiguos.
  */
 session_start();
-
 header("Cache-Control: no-store, no-cache, must-revalidate");
+header("Content-Type: text/html; charset=UTF-8");
 // Restricción de IP
 $allowed_ips = ['127.0.0.1', '201.103.232.198']; // cambia tu cadena de ip
 $client_ip = $_SERVER['REMOTE_ADDR'] ?? 'unknown';
